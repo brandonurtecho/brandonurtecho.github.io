@@ -80,18 +80,21 @@ var AppComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__componentes_index__ = __webpack_require__("../../../../../src/app/componentes/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__componentes_footer_component__ = __webpack_require__("../../../../../src/app/componentes/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__componentes_frases_component__ = __webpack_require__("../../../../../src/app/componentes/frases.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__componentes_panelnoticias_component__ = __webpack_require__("../../../../../src/app/componentes/panelnoticias.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__componentes_header_component__ = __webpack_require__("../../../../../src/app/componentes/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__componentes_entradaindex_component__ = __webpack_require__("../../../../../src/app/componentes/entradaindex.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__componentes_nosotros__ = __webpack_require__("../../../../../src/app/componentes/nosotros.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__componentes_misionvision_component__ = __webpack_require__("../../../../../src/app/componentes/misionvision.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__componentes_inicialprimaria_component__ = __webpack_require__("../../../../../src/app/componentes/inicialprimaria.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__componentes_niveles__ = __webpack_require__("../../../../../src/app/componentes/niveles.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_rutas__ = __webpack_require__("../../../../../src/app/app.rutas.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__componentes_index__ = __webpack_require__("../../../../../src/app/componentes/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__componentes_footer_component__ = __webpack_require__("../../../../../src/app/componentes/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__componentes_frases_component__ = __webpack_require__("../../../../../src/app/componentes/frases.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__componentes_panelnoticias_component__ = __webpack_require__("../../../../../src/app/componentes/panelnoticias.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__componentes_header_component__ = __webpack_require__("../../../../../src/app/componentes/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__componentes_entradaindex_component__ = __webpack_require__("../../../../../src/app/componentes/entradaindex.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__componentes_nosotros__ = __webpack_require__("../../../../../src/app/componentes/nosotros.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__componentes_misionvision_component__ = __webpack_require__("../../../../../src/app/componentes/misionvision.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__componentes_inicialprimaria_component__ = __webpack_require__("../../../../../src/app/componentes/inicialprimaria.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__componentes_niveles__ = __webpack_require__("../../../../../src/app/componentes/niveles.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__componentes_api__ = __webpack_require__("../../../../../src/app/componentes/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_rutas__ = __webpack_require__("../../../../../src/app/app.rutas.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,30 +115,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__componentes_index__["a" /* IndexComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__componentes_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__componentes_frases_component__["a" /* FrasesComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__componentes_panelnoticias_component__["a" /* PanelNoticiasComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__componentes_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__componentes_entradaindex_component__["a" /* EntradaIndexComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__componentes_nosotros__["a" /* NosotrosComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__componentes_misionvision_component__["a" /* MisionVisionComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__componentes_inicialprimaria_component__["a" /* InicialPrimariaComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__componentes_niveles__["a" /* NivelesComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__componentes_index__["a" /* IndexComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__componentes_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__componentes_frases_component__["a" /* FrasesComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__componentes_panelnoticias_component__["a" /* PanelNoticiasComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__componentes_header_component__["a" /* HeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__componentes_entradaindex_component__["a" /* EntradaIndexComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__componentes_nosotros__["a" /* NosotrosComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__componentes_misionvision_component__["a" /* MisionVisionComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__componentes_inicialprimaria_component__["a" /* InicialPrimariaComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__componentes_niveles__["a" /* NivelesComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__componentes_api__["a" /* ApiComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_13__app_rutas__["b" /* routing */]
+                __WEBPACK_IMPORTED_MODULE_15__app_rutas__["b" /* routing */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_16__angular_forms__["a" /* FormsModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_13__app_rutas__["a" /* appRoutingProviders */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_15__app_rutas__["a" /* appRoutingProviders */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -155,6 +164,8 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__componentes_index__ = __webpack_require__("../../../../../src/app/componentes/index.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__componentes_nosotros__ = __webpack_require__("../../../../../src/app/componentes/nosotros.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__componentes_niveles__ = __webpack_require__("../../../../../src/app/componentes/niveles.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__componentes_api__ = __webpack_require__("../../../../../src/app/componentes/api.ts");
+
 
 
 
@@ -164,10 +175,67 @@ var appRoutes = [
     { path: "index", component: __WEBPACK_IMPORTED_MODULE_1__componentes_index__["a" /* IndexComponent */] },
     { path: "nosotros", component: __WEBPACK_IMPORTED_MODULE_2__componentes_nosotros__["a" /* NosotrosComponent */] },
     { path: "niveles", component: __WEBPACK_IMPORTED_MODULE_3__componentes_niveles__["a" /* NivelesComponent */] },
+    { path: "api", component: __WEBPACK_IMPORTED_MODULE_4__componentes_api__["a" /* ApiComponent */] },
     { path: "**", component: __WEBPACK_IMPORTED_MODULE_1__componentes_index__["a" /* IndexComponent */] }
 ];
 var appRoutingProviders = [];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/componentes/api.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApiComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modelos_Usuario__ = __webpack_require__("../../../../../src/app/modelos/Usuario.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__servicios_usuario_service__ = __webpack_require__("../../../../../src/app/servicios/usuario.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ApiComponent = /** @class */ (function () {
+    function ApiComponent(servicioUsuario) {
+        this.servicioUsuario = servicioUsuario;
+        this.identificado = "ok";
+        this.usuario = new __WEBPACK_IMPORTED_MODULE_1__modelos_Usuario__["a" /* Usuario */]("Brandon", "dshdjiashjid123");
+    }
+    ApiComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.servicioUsuario.login().subscribe(function (resultado) {
+            for (var i = 0; i < resultado.length; i++) {
+                if (resultado[i].usuario == _this.usuario.usuario && resultado[i].password == _this.usuario.password) {
+                    _this.identificado = resultado[i].id;
+                    localStorage.setItem("id", _this.identificado);
+                    localStorage.setItem("usuario", resultado[i].usuario);
+                }
+            }
+        }, function (error) {
+            var errorMensaje = error;
+            console.log("errorMensaje", errorMensaje);
+        });
+    };
+    ApiComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-api',
+            template: __webpack_require__("../../../../../src/app/vistas/api.html"),
+            providers: [__WEBPACK_IMPORTED_MODULE_2__servicios_usuario_service__["a" /* ServicioUsuarios */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__servicios_usuario_service__["a" /* ServicioUsuarios */]])
+    ], ApiComponent);
+    return ApiComponent;
+}());
+
 
 
 /***/ }),
@@ -274,6 +342,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var HeaderComponent = /** @class */ (function () {
     function HeaderComponent() {
+        this.logeado = false;
     }
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -462,6 +531,70 @@ var PanelNoticiasComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/modelos/Usuario.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Usuario; });
+var Usuario = /** @class */ (function () {
+    function Usuario(usuario, password) {
+        this.usuario = usuario;
+        this.password = password;
+    }
+    return Usuario;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/servicios/usuario.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicioUsuarios; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ServicioUsuarios = /** @class */ (function () {
+    function ServicioUsuarios(http) {
+        this.http = http;
+        this.url = "https://www.tutorialesatualcance.com/usuarios.json";
+    }
+    ServicioUsuarios.prototype.login = function () {
+        var cabecera = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ "Content-Type": "application/json" });
+        return this.http.post(this.url, { cabecera: cabecera }).map(function (resultado) { return resultado.json(); });
+    };
+    ServicioUsuarios = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+    ], ServicioUsuarios);
+    return ServicioUsuarios;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/vistas/api.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<!--============================\r\n=            HEADER            =\r\n=============================-->\r\n\r\n<app-header></app-header>\r\n\r\n<!--====  End of HEADER  ====-->\r\n\r\n<section class=\"container\" style=\"margin-top: 100px;\" *ngIf=\"identificado\">\r\n  <form #formIngreso = \"ngForm\" (ngSubmit) = \"onSubmit()\">\r\n    <div class=\"form-group\">\r\n      <!-- USUARIO -->\r\n      <label for=\"exampleInputUser\">Usuario</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"exampleInputUser\" placeholder=\"Ingresar usuario\" name=\"usuario\" #usuario=\"ngModel\" [(ngModel)] = \"usuario.usuario\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <!-- CONTRASEÑA -->\r\n      <label for=\"exampleInputPassword1\">Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Ingresar contraseña\" name=\"password\" #password=\"ngModel\" [(ngModel)] = \"usuario.password\">\r\n    </div>\r\n    <div class=\"form-check\">\r\n      <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\r\n      <label class=\"form-check-label\" for=\"exampleCheck1\">Recordarme</label>\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Ingresar</button>\r\n  </form>\r\n</section>\r\n\r\n\r\n\r\n\r\n<section *ngIf=\"!identificado\">\r\n\r\n</section>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!--============================\r\n=            FOOTER            =\r\n=============================-->\r\n\r\n<app-footer></app-footer>\r\n\r\n<!--====  End of FOOTER  ====-->\r\n"
+
+/***/ }),
+
 /***/ "../../../../../src/app/vistas/entradaindex.component.html":
 /***/ (function(module, exports) {
 
@@ -486,7 +619,7 @@ module.exports = "<!--=====================================\r\n=          AQUI V
 /***/ "../../../../../src/app/vistas/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--========================================\r\n=            MENU DE NAVEGACIÓN           =\r\n=========================================-->\r\n\r\n<div class=\"col-12\">\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top letraNav\" style=\"font-size: 15px;\">\r\n          <div class=\"container\">\r\n            <!-- Logo del colegio en el menu nav -->\r\n            <a [routerLink] =\"['/index']\"><img src=\"../assets/img/logo1.jpg\" alt=\"logo-no-encontrado\"></a>\r\n\r\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n              <span class=\"navbar-toggler-icon\"></span>\r\n            </button>\r\n            <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n              <ul class=\"navbar-nav ml-auto menu\">\r\n                <li class=\"nav-item active\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/index']\" >Inicio\r\n                    <span class=\"sr-only\">(current)</span>\r\n                  </a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/nosotros']\">Nosotros</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/niveles']\" >Niveles</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Infraestructura</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Noticias</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Contactanos</a>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n        </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!--====  End of MENU DE NAVEGACIÓN  ====-->\r\n\r\n\r\n\r\n\r\n<!--==============================\r\n=            CAROUSEL            =\r\n===============================-->\r\n\r\n  <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\" style=\"margin-top: 95px;\">\r\n        <ol class=\"carousel-indicators\">\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\r\n        </ol>\r\n        <div class=\"carousel-inner\">\r\n          <div class=\"carousel-item active\">\r\n            <img class=\"first-slide\" src=\"../assets/img/img1.jpg\" alt=\"First slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption text-left\">\r\n                <h1>FOMENTAMOS SU DESARROLLO</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laudantium vel aspernatur voluptates modi dolore, a rerum veritatis voluptatibus iure sint ipsum vitae odit libero minima provident architecto, quaerat repellat.</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Sign up today</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img class=\"second-slide\" src=\"../assets/img/img2.jpg\" alt=\"Second slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption\">\r\n                <h1>MERECEN LO MEJOR</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam soluta, nisi vero veritatis delectus id voluptatum sapiente facilis laudantium libero dolorum pariatur tempora assumenda sequi accusamus rerum ea. Ullam, quibusdam?</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Learn more</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img class=\"third-slide\" src=\"../assets/img/img3.jpg\" alt=\"Third slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption text-right\">\r\n                <h1>SU BIENESTAR FÍSICO Y MENTAL ES NUESTRA PREOCUPACIÓN</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ad ullam facilis inventore itaque nam rem cupiditate facere pariatur unde accusamus, magnam laudantium veritatis, velit aperiam expedita officiis mollitia. Perspiciatis!</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Browse gallery</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <a class=\"carousel-control-prev\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\r\n          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"sr-only\">Previous</span>\r\n        </a>\r\n        <a class=\"carousel-control-next\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\r\n          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"sr-only\">Next</span>\r\n        </a>\r\n      </div>\r\n\r\n<!--====  End of CAROUSEL  ====-->\r\n"
+module.exports = "<!--========================================\r\n=            MENU DE NAVEGACIÓN           =\r\n=========================================-->\r\n\r\n<div class=\"col-12\">\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top letraNav\" style=\"font-size: 15px;\">\r\n          <div class=\"container\">\r\n            <!-- Logo del colegio en el menu nav -->\r\n            <a [routerLink] =\"['/index']\"><img src=\"../assets/img/logo1.jpg\" alt=\"logo-no-encontrado\"></a>\r\n\r\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n              <span class=\"navbar-toggler-icon\"></span>\r\n            </button>\r\n            <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n              <ul class=\"navbar-nav ml-auto menu\">\r\n                <li class=\"nav-item active\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/index']\" >Inicio\r\n                    <span class=\"sr-only\">(current)</span>\r\n                  </a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/nosotros']\">Nosotros</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" [routerLink] = \"['/niveles']\" >Niveles</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Infraestructura</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Noticias</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                  <a class=\"nav-link \" href=\"#\">Contactanos</a>\r\n                </li>\r\n                <li class=\"nav-item\" *ngIf=\"logeado == false\" >\r\n                  <a class=\"nav-link \" [routerLink] = \"['/api']\">Login</a>\r\n                </li>\r\n                <li class=\"nav-item\" *ngIf=\"logeado == true\">\r\n                  <a class=\"nav-link\">Salir</a>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n        </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!--====  End of MENU DE NAVEGACIÓN  ====-->\r\n\r\n\r\n\r\n\r\n<!--==============================\r\n=            CAROUSEL            =\r\n===============================-->\r\n\r\n  <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\" style=\"margin-top: 95px;\">\r\n        <ol class=\"carousel-indicators\">\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\r\n          <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\r\n        </ol>\r\n        <div class=\"carousel-inner\">\r\n          <div class=\"carousel-item active\">\r\n            <img class=\"first-slide\" src=\"../assets/img/img1.jpg\" alt=\"First slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption text-left\">\r\n                <h1>FOMENTAMOS SU DESARROLLO</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laudantium vel aspernatur voluptates modi dolore, a rerum veritatis voluptatibus iure sint ipsum vitae odit libero minima provident architecto, quaerat repellat.</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Sign up today</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img class=\"second-slide\" src=\"../assets/img/img2.jpg\" alt=\"Second slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption\">\r\n                <h1>MERECEN LO MEJOR</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam soluta, nisi vero veritatis delectus id voluptatum sapiente facilis laudantium libero dolorum pariatur tempora assumenda sequi accusamus rerum ea. Ullam, quibusdam?</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Learn more</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"carousel-item\">\r\n            <img class=\"third-slide\" src=\"../assets/img/img3.jpg\" alt=\"Third slide\">\r\n            <div class=\"container\">\r\n              <div class=\"carousel-caption text-right\">\r\n                <h1>SU BIENESTAR FÍSICO Y MENTAL ES NUESTRA PREOCUPACIÓN</h1>\r\n                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ad ullam facilis inventore itaque nam rem cupiditate facere pariatur unde accusamus, magnam laudantium veritatis, velit aperiam expedita officiis mollitia. Perspiciatis!</p>\r\n                <!-- <p><a class=\"btn btn-lg btn-primary\" href=\"#\" role=\"button\">Browse gallery</a></p> -->\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <a class=\"carousel-control-prev\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\r\n          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"sr-only\">Previous</span>\r\n        </a>\r\n        <a class=\"carousel-control-next\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\r\n          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n          <span class=\"sr-only\">Next</span>\r\n        </a>\r\n      </div>\r\n\r\n<!--====  End of CAROUSEL  ====-->\r\n"
 
 /***/ }),
 
@@ -580,7 +713,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
